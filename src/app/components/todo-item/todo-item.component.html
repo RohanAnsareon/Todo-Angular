@@ -1,0 +1,6 @@
+<mat-card class="card-container" [class.done-container]="todo.completed">
+    {{todo.title}} - {{todo.completed ? 'completed' : 'not completed'}} - {{ todo.createDate }}
+    
+    <button mat-flat-button (click)="handleToggle()">Toggle</button>
+    <button mat-flat-button (click)="handleDelete()" color="warn">Delete</button>
+</mat-card>
